@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #3a4250;
+    padding: 80px 40px;
+  }
+  
+  form{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+  }
+  .votes {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 7px;
+    border:2px solid dodgerblue;
+    margin: 3px;
+  }
+  
+  .logo-angular {
+    width: 100%;  
+  }

@@ -1,0 +1,34 @@
+<div class="votes">
+  <div class="four wide column">
+    <div class="ui statistics">
+      <div class="statistics">
+
+        <div class="value">
+          <h2><i class="large book icon"></i> {{article.votes}}</h2>
+        </div>
+
+        <div class="label" style="text-align:right">Points</div>
+
+      </div>
+    </div>
+  </div>
+  <div class="twelve wide column">
+      <a href="{{article.link}}" class="ui header" target="_blank">{{article.title}}</a>
+      <br>
+      <div class="meta">{{article.domain()}}</div>
+      <ul class="ui big horizontal list">
+        <li>
+          <a href (click)="voteUp()">
+            <i class="arrow up icon"></i>
+            Up Vote
+          </a>
+        </li>
+        <li>
+          <a href (click)="voteDown()">
+            <i class="arrow down icon"></i>
+            Down Vote
+          </a>
+        </li>
+      </ul>
+  </div>
+</div>

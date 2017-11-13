@@ -1,0 +1,43 @@
+<div class="ui grid">
+  <div class="twelve wide column">
+    <form action="" class="ui form">
+      <h3 class="ui header">{{title}}</h3>
+
+      <div class="field">
+        <label for="title">Titulo:</label>
+        <input 
+          #newtitle
+          type="text"
+          name="title"
+          placeholder="Introduce un titulo...">
+      </div>
+
+      <div class="field">
+        <label for="link">link</label>
+        <input 
+          #newlink
+          type="text"
+          name="link"
+          placeholder="Introduce link...">
+      </div>
+
+      <button
+        class="ui primary button"
+        (click)="addArticle(newtitle, newlink)"
+        type="submit">
+        Guardar link
+      </button>
+    </form>
+  </div>
+</div>
+<div class="ui grid">
+  <app-article 
+    *ngFor="let article of sortedArticles(); let i = index"
+    [article]="article"
+    class="four wide column">
+  </app-article>
+<!-- 
+  <div class="four wide column" style="display:flex; justify-content:center; align-items:center;">
+    <app-article></app-article>
+  </div> -->
+</div>
